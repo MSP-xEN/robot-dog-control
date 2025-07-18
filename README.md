@@ -1,6 +1,8 @@
 # robot-dog-control
 ## preparation
-  本机下载[unitree_sdk2_python](https://support.unitree.com/home/zh/developer/Python)
+  机器狗上下载[unitree_sdk2_python](https://support.unitree.com/home/zh/developer/Python)（已装好）
 ## usage
   因宇树科技不当人只支持有线开发，如果本机和机器狗连同一个wifi也没法直接控制。我们需要一些trick,用一根短网线让机器狗自己连通自己，如下图所示：
-  ![网线](home/xen/vlm/image/网线.jpg)
+  ![网线](网线.jpg)
+## example
+  控制机器狗的例程client.py只能在机器狗上的小主机上运行，网络端口填eth0，注意测试机器狗趴下又站起来后机器狗的关节会锁定，如果想让它move的话需要先解除锁定
