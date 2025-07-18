@@ -6,3 +6,8 @@
   ![网线](网线.jpg)
 ## example
   控制机器狗的例程client.py只能在机器狗上的小主机上运行，网络端口填eth0，注意测试机器狗趴下又站起来后机器狗的关节会锁定，如果想让它move的话需要先解除锁定
+## NavGPT
+  新增机器狗模式，机器狗主机上运行server文件监听NavGPT的action，本机在NavGPT环境下执行
+  ```python
+  python NavGPT.py --llm_model_name gpt-4o-ca \    --output_dir ../datasets/R2R/exprs/gpt-3.5-turbo-test \    --val_env_name robotdog \    --iters 1 --agent_mode robot_dog 
+  ```
